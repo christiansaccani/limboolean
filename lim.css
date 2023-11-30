@@ -1,0 +1,97 @@
+*{
+	Box-sizing:border-box;
+	margin: 0;
+  font-family: helvetica, sans-serif;
+}
+
+body {
+  background-image: url(background.jpg);
+  background-size: cover;
+}
+
+/* Quando vuoi sovrapporre due differenti linee di codice, rendi entrambe
+position: absolute e determina la loro posizione assoluta rispetto i margini.
+Per dare un ordine di sovrapposizione puoi usare z-index e
+il valore maggiore sarà sovrapposto. */
+
+.square {
+  background-color: black;
+  opacity: 0.5;
+	width: 64%;
+	height: 92%;
+	margin: 2% 18%;
+	border-radius: 20px;
+	position: absolute;
+	z-index: 0;
+}
+
+.corpo {
+	position: absolute;
+  top: 14.5%;     /* top specifica la posizione verticale di un elemento posizionato*/
+  width: 100%;
+	z-index: 1;
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  color: #00FF00;
+	font-weight: 500;
+}
+
+h2 {
+  display: inline-block;
+  color: white;
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+.pulsanti {
+  text-align: center;
+  padding-top: 12px;
+  margin-right: 25%;
+  margin-left: 25%;
+  background-color: #00FF00;
+  height: 45px;
+  margin-top: 5px;
+}
+
+.monopattino {
+  margin-top: 20px;
+  margin-left: 25%;
+}
+
+/* vado a selezionare solo i figli <div> della class="monopattino" */
+.monopattino > div {
+  color: white;
+  margin-top: 2px;
+}
+
+#orange {
+  border-color: #DAA520;
+  background-color: #DAA520;
+  width: 22%;
+  height: 25px;
+  border-radius: 10px;
+	margin-top: 3px;
+}
+
+#green {
+  border-color: #228B22;
+  background-color: #228B22;
+  width: 40%;
+  height: 25px;
+  border-radius: 10px;
+	margin-top: 3px;
+}
+
+#red {
+  border-color: #A52A2A;
+  background-color: #A52A2A;
+  width: 12%;
+  height: 25px;
+  border-radius: 10px;
+	margin-top: 3px;
+}
